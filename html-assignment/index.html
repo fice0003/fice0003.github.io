@@ -4,11 +4,12 @@
     <!-- Document information -->
     <meta charset="UTF-8">
     <title>HTML Semantics Assignment </title>
+    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
     <!-- Document Content -->
     <header>
-        <h1>Jennifer</h1>
+        <h1 class="site-title">Jennifer</h1>
     </header>
     <!-- Main content of the page -->
     <main>
@@ -16,7 +17,7 @@
         <article>
             <h2>About Me</h2>
         <!-- Write at least two paragraphs about yourself. Minimum 50 words per-paragraph -->
-        <img src="images/IMG_1860.jpg" alt="Laughing Buddha" />
+        <img src="images/IMG_1860.jpg" alt="Laughing Buddha" id="my-image"/>
 
             <p>Namaste. My name is Jennifer, but please call me <strong>Jen</strong>. I was born and raised in Ottawa, so I’m a champ at handling winter weather. In fact, when I was in 10<sup>th</sup> grade, my first driving test was done during a snowstorm (no biggie).</p>
 
@@ -27,12 +28,14 @@
                 </blockquote>
             
         </article>
+       
         <!--Adding an article for week 4 assignment-->
         <h3>Hobbies</h3>
         <p>
-            <ul>
+            <ul id="hobbies-list">
                 <li>Soccer</li>
                 <li>Swimming</li>
+                <li>Cooking</li>
               </ul>
         
     </main>
@@ -42,7 +45,7 @@
             <nav>
                 <ul>
                     <li>
-                <a href="notes.html">Notes</a>
+                <a href="notes.html" style="text-decoration: none;">Notes</a>
                 </li>
                 </ul>
             </nav>
