@@ -1,13 +1,16 @@
 /* Command + / to add a comment block */
 
 body {
-    color: darkslategray;
+    /* !important will overwrite the cascading effect */
+    color: darkslategray; 
     font-family:Arial, Helvetica, sans-serif;
 }
 
 h1 {
     color: white;
 }
+
+/* Specificity: 0001 */
 
 p {
     background-color: lightblue;
@@ -19,7 +22,9 @@ h1, h2, h3, h4 {
 }
 
 /* descendant selector */
+/* specificity: 0002 */
 nav ul{
+    color: inherit
     list-style: none;
 }
 
@@ -30,6 +35,7 @@ nav ul a{
 }
 
 /* class name selector */
+/* specificity: 0010 */
 .orange-link{
 background-color: darkslategray;
 color: orange;
@@ -37,6 +43,7 @@ text-decoration: none;
 }
 
 /* id selector */
+/* specificity: 0100 */
 #treatofweek {
 background-color: orange;
 }
@@ -112,4 +119,27 @@ odd = 2n+1 = 1, 2, 3, 5, 7, 9, etc/
 */
 dl ul li:nth-child(2n+1){
     background-color: blanchedalmond;
+}
+
+/* CSS Specificity */
+}
+/* specificity: 0002 */
+body footer{
+    background: color: rgb(0,0,0);
+}
+
+/* specificity: 0001 */
+footer{
+    background-color: #d5836c;
+    padding: 20px;
+}
+
+/* specificity: 0010 */
+.site-footer{
+    background-color: cornflowerblue; 
+}
+
+/* specificity: 0011  */
+footer.site-footer{
+background-color: rgba(0,0,0,0.2);
 }
