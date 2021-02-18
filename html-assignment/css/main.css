@@ -32,7 +32,7 @@ and select the id in CSS to add a box-shadow with 0 horizontal and vertical plac
 
 /* Using the nth-child selector - add a background to the odd list items in the hobby list */
 
-ul li:nth-child(odd){
+#hobbies-list li:nth-child(odd){
     background-color: yellow;
 }
 
